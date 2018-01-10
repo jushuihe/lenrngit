@@ -1,0 +1,437 @@
+
+
+#container{
+    width:100%;
+}
+#container>div{
+    width:1130px;
+    margin:0 auto;
+    position:relative;
+    top:-80px;
+    background: #fff;
+}
+/*设置导航条的内容*/
+.nav{
+    border-bottom: 1px solid #eee;
+    margin: 10px;
+}
+.nav>ul>li{
+    float:left;
+    font-size: 16px;
+    padding:10px 15px;
+    border-bottom:3px solid transparent;
+}
+
+.nav>ul:nth-child(2){
+    position:relative;
+}
+/*设置首页导航里面的下拉显示框的样式*/
+.nav .pullDown{
+    overflow:hidden;
+    height:0px;
+    transition: all .5s linear;
+    position:absolute;
+    top:40px;
+    z-index: 10;
+    /*border:1px solid black;*/
+    background:rgba(255,255,255,0.8);
+}
+.nav .pullDown:nth-child(4){
+    left:0px;
+}
+.nav .pullDown:nth-child(5){
+    left:94px;
+}
+.nav .pullDown:last-child{
+    left:188px;
+}
+
+.nav .pullDown>li{
+    font-size: 16px;
+    padding:10px 15px;
+    border-bottom:3px solid transparent;
+
+}
+
+
+/*轮播部分的样式*/
+.lunno{
+    width:100%;
+    height:200px;
+}
+.lunbo_part1{
+    width:472px;
+    height:236px;
+    overflow:hidden;
+    margin-left:10px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+}
+.lunbo_part1>div{
+    width:2838px;
+    display:inline-block;
+    /*transition: all 1s linear;*/
+    position: absolute;
+}
+.lunbo_part1>div img:not(:first-child){
+    margin-left: -5px;
+}
+.lunbo>ul{
+    height:100%;
+    width: 38%;
+   display: inline-block;
+}
+.lunbo>ul li{
+    width:130px;
+    height:108px;
+    float:left;
+    margin:5px;
+    margin-left:8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position:relative;
+    border-radius: 5px;
+}
+
+/*设置轮播页面里面的li导航的样式*/
+ul.indicators{
+    position:absolute;
+    bottom: 10px;
+    left:40%;
+}
+ul.indicators>li{
+    width:10px;
+    height: 10px;
+    /*border:1px solid black;*/
+    border-radius: 50%;
+    background: white;
+    float:left;
+    margin-left:5px;
+    cursor: pointer;
+}
+ul.indicators>li:hover{
+    background:#FE8BA3;
+}
+ul.indicators>li.hover{
+    background:#FE8BA3;
+}
+/*设置上一张，下一张的样式*/
+div.arrow-left,div.arrow-right{
+    width:20px;
+    height:50px;
+    background:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top:40%;
+    opacity: 0.3;
+    cursor: pointer;
+}
+div.arrow-left:hover,div.arrow-right:hover{
+    opacity: 0.8;
+}
+.arrow-left{
+  left:3px;
+}
+.arrow-right{
+ right:3px;
+}
+.arrow-left>img, .arrow-right>img{
+    position:absolute;
+    margin:auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.lunbo>ul li img{
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.lunbo>ul li span{
+    position:absolute;
+    bottom:2px;
+    left:20px;
+    color:white;
+}
+
+.lunbo>div:last-child{
+    display: inline-block;
+    position:relative;
+    top:-30px;
+}
+.lunbo div:last-child>ul li{
+    width:193px;
+    height:53px;
+    background:#fff;
+    margin-bottom: 5px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    font-size:14px;
+    line-height: 50px;
+}
+.lunbo div:last-child>ul li>a{
+    width:100%;
+    height:100%;
+}
+
+.lunbo>div:last-child>div a{
+    width:90px;
+    height:40px;
+    
+}
+.lunbo>div:last-child>div a>img{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+.f1{
+    width:100%;
+    height:240px;
+}
+.f1_part1{
+    width:55%;
+    height:100%;
+}
+/*设置信仰榜单里面的内容*/
+.f1_part1_title{
+   height:40px;
+
+}
+.f1_part1_title img{
+    position:relative;
+    top:-4px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+.f1_part1_title span{
+    font-size:20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.f1_part1_title>ul{
+    position: relative;
+    top:4px;
+    left: 10px;
+}
+.f1_part1_title>ul li{
+    float: left;
+    width:50px;
+    height:20px;
+    margin-left:10px;
+    background:#FFE9EC;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 20px;
+
+}
+.f1_part1_title a{
+    line-height: 30px;
+    text-align: center;
+    color:#FE8BA3;
+    margin-right:10px;
+}
+.f1_part1_container{
+    width:100%;
+    height:200px;
+    display:flex;
+    justify-content: space-between;
+}
+.f1_part1_container>ul{
+    width:31%;
+    height:100%;
+}
+.f1_part1_container>ul>li{
+    font-size:12px;
+    line-height:20px;
+    margin-top:5px;
+    overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+}
+.f1_part1_container>ul>li:first-child{
+    line-height:30px;
+    border-bottom: 1px solid black;
+    font-size:22px;
+    padding-left:10px;
+}
+.f1_part1_container>ul>li>span:first-child{
+    display:inline-block;
+    width:13px;
+    height:14px;
+    background: #ff0;
+    line-height: 14px;
+    padding-left:5px;
+    border-radius: 2px;
+    margin-right: 5px;
+    position:relative;
+    top:-6px;
+}
+.f1_part1_container>ul>li:nth-child(2)>span:first-child{
+    background: #FF7AAD;
+}
+.f1_part1_container>ul>li:nth-child(3)>span:first-child{
+    background:#FFA543;
+}
+.f1_part1_container>ul>li:nth-child(4)>span:first-child{
+    background:#37CFBF;
+}
+.f1_part1_container>ul>li:nth-child(5)>span:first-child{
+    background:#F0EFE9;
+}
+.f1_part1_container>ul>li:nth-child(6)>span:first-child{
+    background:#F0EFE9;
+}
+.f1_part1_container>ul>li:last-child>span:first-child{
+    background:url("../img/index/icon-limit.png") no-repeat center center;
+}
+.f1_part1_container>ul>li>span:nth-child(2){
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display: inline-block;
+    width:100px;
+    color:#000;
+}
+.f1_part1_container>ul>li>span:nth-child(3){
+    float:right;
+}
+.f1_part1_container>ul>li>span:last-child{
+    float: right;
+}
+.f1_part2{
+    width:45%;
+    height: 100%;
+}
+.f1_part2_title{
+    height:40px;
+}
+.f1_part2_title span{
+    font-size:20px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.f2_part1_container{
+    width:100%;
+    height:200px;
+    display:flex;
+    justify-content: space-between;
+}
+.f2_part1_container>ul{
+    width:31%;
+    height:100%;
+}
+.f2_part1_container>ul>li:first-child{
+    line-height:30px;
+    border-bottom: 1px solid black;
+    font-size:22px;
+}
+.f2_part1_container>ul>li>div{
+    width:60px;
+    height:80px;
+}
+.f2_part1_container>ul>li::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.f2_part1_container>ul>li{
+    margin-top: 3px;
+}
+.f2_part1_container>ul>li>div>p:first-child{
+    font-size: 12px;
+    font-weight:bold;
+}
+.f2_part1_container>ul:last-child>li:first-child{
+    margin-top:1px; 
+}
+.f2_part1_container>ul:last-child>li:not(:first-child){
+    font-size:14px;
+    line-height:20px;
+    margin-top:7px;
+}
+.f2_part1_container>ul:last-child>li:not(:first-child) span:last-child{
+    display:inline-block;
+    float: right;
+    width:40px;
+    height:14px;
+    border-radius: 3px;
+    background:#2a0;
+    color: #fff;
+    line-height: 14px;
+    text-align: center;
+}
+.f2_part1_container img.remenPic{
+    width:30px;
+    height:30px;
+}
+.f2_part1_container  img{
+    width:93px;
+    height:93px;
+}
+.f2_part1_container>ul:last-child span{
+    display: inline-block;
+    width:110px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+#container>div>div{
+    /*margin-top:40px;*/
+}
+/*//为所有要设置模糊封面的div 设置绝对定位*/
+.mohu{
+    position: relative;
+
+}
+.mohu:hover{
+    color:#FF7C8C;
+    font-weight: bold;
+}
+.mohu1{
+    display: block;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background:rgba(0, 0,0, 0.5);
+    overflow: hidden;
+}
+.mohu1>p{
+    line-height: 20px;
+    font-size:16px;
+    color:#fff;
+    margin-top:30px;
+    font-weight: bold;
+    position:relative;
+    left:140px;
+}
+.product_show .mohu1>p{
+    margin-top: 10px;
+}
+.btn{
+    position:absolute;
+    top:350px;
+    left:50px;
+    padding:10px 10px;
+    border:1px solid #eee;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px #666;
+    background:white;
+}
+.btn:hover{
+    background:#eee;
+}
+.btn_snowclear{
+    left:120px;
+ }
+.snow{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.8);
+    box-shadow:0px 0px 37px 15px white;
+    position:absolute;
+}

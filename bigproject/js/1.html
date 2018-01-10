@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="base64.js"></script>
+</head>
+<body>
+
+
+<script>
+    //		var b = new Base64();
+    var str = '1232';
+
+
+    var b_str = Base64.encode(str);
+    console.log(b_str);
+    var bb_str = Base64.encode(b_str);
+    console.log(bb_str);
+    for(var i = 0;i<10;i++){
+        bb_str = Base64.encode(bb_str);
+        console.log(bb_str);
+	}
+	for(var i=0;i<6;i++){
+        bb_str = Base64.decode(bb_str);
+        console.log(bb_str);
+	}
+
+    function compile(code){
+        var c=String.fromCharCode(code.charCodeAt(0)+code.length);
+        for(var i=1;i<code.length;i++){
+            c+=String.fromCharCode(code.charCodeAt(i)+code.charCodeAt(i-1));
+        }
+        return escape(c);
+    }
+    var a = compile("abc");
+    console.log(a);
+    a = compile(a);
+    console.log(a);
+    a = Base64.encode(a);
+    console.log(a);
+</script>
+</body>
+</html>

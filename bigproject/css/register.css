@@ -1,0 +1,163 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+div.register{
+    height:100%;
+    width:100%;
+    background:url("../img/id=59134897(Yuuri).png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.bg_color{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0px;
+    left:0px;
+    background:rgba(0,0, 0, 0.1);
+}
+.register::before{
+    content: "";
+    display: table;
+}
+/*每起到作用*/
+.register h1{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    margin-top:30px;
+
+}
+div.container{
+    width:500px;
+    height:700px;
+    margin:50px auto;
+    background:#fff;
+    position: relative;
+    z-index: 100;
+}
+div.container::before{
+    content: "";
+    display:table;
+}
+/*设置注册信息表的内容*/
+.h1{
+    font-size:26px;
+    height:40px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+div.container>p{
+    width:100%;
+    height:50px;
+    margin-bottom:20px;
+    font-size: 20px;
+    text-align: left;
+}
+div.container>p:nth-child(2){
+    height: 30px;
+    background:white;
+    font-size: 14px;
+}
+div.container>p:nth-child(2)>span{
+    padding-right:20px;
+    background:#fff;
+}
+div.container>p>span{
+    width:150px;
+    height:50px;
+    /*background:#ff0;*/
+    display:inline-block;
+    text-align: right;
+}
+
+div.container>p>input{
+    width:280px;
+    height:30px;
+    line-height:50px;
+    font-size:20px;
+    padding-left:20px;
+}
+div.container>p>a{
+    margin-right:10px;
+}
+/*在输入用户信息之后，如果不能通过，则显示classname为 false 的样式  如果通过则显示true*/
+.false{
+    width:20px;
+    height:20px;
+    background: url("../img/err.png") no-repeat center center;
+    display: inline-block;
+    margin-left: 10px;
+}
+.true{
+    width:20px;
+    height:20px;
+    background: url("../img/ok.png") no-repeat center center;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+div.container>p:nth-child(8){
+    text-align: center;
+    height: 20px;
+}
+.hobby{
+    width:90%;
+    height:100px;
+    /*background:#ff0;*/
+    margin:0 auto;
+}
+.hobby>span{
+    text-align: center;
+    font-size: 16px;
+    line-height:40px;
+    background:#FF7282;
+    padding:10px;
+    margin:0px;
+    border-radius: 6px;
+    position:relative;
+}
+.hobby>span:hover{
+    background:#ff72aa;
+}
+/*设置注册按钮*/
+div.container p:last-child{
+    /*background:#ff0;*/
+    width: 100%;
+}
+div.container button{
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    line-height:30px;
+    background:#FF7282;
+    padding:10px;
+    margin-left:150px;
+    border-radius: 6px;
+    position:relative;
+    outline: 0px;
+    border: none;
+}
+
+/*选中了兴趣之后加一个 className 为 hobby_span*/
+.hobby_span::after{
+    content: url("../img/icon-star.png");
+    display: inline-block;
+}
+.add{
+    width:200px;
+    height:100px;
+    position:absolute;
+    top:20%;
+    left:45%;
+    line-height:100px;
+    text-align:center;
+    z-index:100;
+    opacity: 0;
+    transition: all 0.5s linear;
+    background:rgba(0,0, 0, 0.3);
+    border-radius: 8px;
+    font-size: 20px;
+}
+

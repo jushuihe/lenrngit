@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/pre_products.css">
+    <!--[if It IE 9]>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container body">
+        <div class="main_container">
+            <div class="row">
+                <!--左边的导航栏-->
+                <div class="left_col clearfix">
+                    <div class="left_coll scroll-view">
+                        <div class="navbar nav_title">
+                            <a href="#" class="site_title">
+                                <div class="nav_logo"></div>
+                                <span>轻文轻小说后台</span>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="profile clearfix ">
+                            <div class="profile_pic">
+                                <img src="../img/default.png" alt="" class="img-circle profile_img">
+                            </div>
+                            <div class="profile_info ">
+                                <span>欢迎回来</span>
+                                <h3>超级管理员</h3>
+                            </div>
+                        </div>
+                        <div id="sidebar-menu" class="main_menu_side hidden-print main-menu">
+                            <!--后台首页-->
+                            <div class="menu_section">
+                                <ul class="nav side-menu">
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-home"></span>
+                                            后台首页
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--数据管理管理-->
+                            <div class="menu_section active">
+                                <h3>数据管理</h3>
+                                <ul class="nav side-menu">
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-globe"></span>
+                                            商品管理
+                                            <span class="glyphicon glyphicon-chevron-down navbar-right"></span>
+                                        </a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="#">商品列表</a></li>
+                                            <li><a href="#">多条件查询</a></li>
+                                            <li><a href="#">添加商品</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            用户管理
+                                            <span class="glyphicon glyphicon-chevron-down navbar-right"></span>
+                                        </a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="#">用户列表</a></li>
+                                            <li><a href="#">用户检索</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span   class="glyphicon glyphicon-shopping-cart"></span>
+                                            订单管理
+                                            <span class="glyphicon glyphicon-chevron-down navbar-right"></span>
+                                        </a>
+                                        <ul class="nav child_menu list-unstyled">
+                                            <li><a href="#">订单列表</a></li>
+                                            <li><a href="#">搜索订单</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--内容管理-->
+                            <div class="menu_section">
+                                <h3>内容管理</h3>
+                                <ul class="nav side-menu">
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-list-alt"></span>
+                                            首页商品管理
+                                            <span class="glyphicon glyphicon-chevron-down navbar-right"></span>
+                                        </a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="#">轮播广告</a></li>
+                                            <li><a href="#">首页推荐</a></li>
+                                            <li><a href="#">首页推荐</a></li>
+                                            <li><a href="#">最新上架</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-wrench"></span>
+                                            功能页面
+                                            <span class="glyphicon glyphicon-chevron-down navbar-right"></span>
+                                        </a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="#">403错误页面</a></li>
+                                            <li><a href="#">404错误页面</a></li>
+                                            <li><a href="#">500错误页面</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="sidebar-footer hidden-small">
+                            <a href="#"><span class="glyphicon  glyphicon-th"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-cog"></span></a>
+                            <a href="#"><span class="glyphicon  glyphicon-fullscreen"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-off"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--右边的数据显示区-->
+                <div class="right_col">
+                    <div class="row right-header">
+                        <div class="col-md-9 ">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <!--<div href="#" class="navbar-right msg_uname">-->
+                                <!--<img class="img-circle" src="../img/default.png" alt="">-->
+                                <!--<span class="uname">超级管理员</span>-->
+                                <!--<span class="glyphicon glyphicon-chevron-down uname_down"></span>-->
+                                <!--<ul class="list-unstyled uname_list">-->
+                                    <!--<li>基本信息 <span></span></li>-->
+                                    <!--<li>用户设置 <span></span></li>-->
+                                    <!--<li>使用说明 <span></span></li>-->
+                                    <!--<li>退出登录 <span></span></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<span class="glyphicon glyphicon-envelope"><span class="badge">23</span></span>-->
+
+                            <div class="dropdown msg_uname ">
+                                <span class="glyphicon glyphicon-envelope uname_email"><span class="badge">23</span></span>
+                                <img class="img-circle" src="../img/default.png" alt="">
+                                <div  class="btn btn-default dropdown-toggle uname_btn"
+                                        type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    超级管理员
+                                    <span class="caret"></span>
+                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">基本信息</a></li>
+                                    <li><a href="#">用户设置</a></li>
+                                    <li><a href="#">使用说明</a></li>
+                                    <li><a href="#">退出登录</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="right_title">
+                        <div class="col-md-12">
+                            <h2>小说列表</h2>
+                        </div>
+                    </div>
+                    <div class="row" id="right_pnosize">
+                        <div class="col-md-8">
+                            <span>每页显示记录数：</span>
+                            <select class="sel">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                                <option value="80">80</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <form action="#" class="navbar-right navbar-form right_search">
+                                <div class="form-group has-feedback">
+                                    <label for="kw" class="sr-only">产品搜索</label>
+                                    <input type="text" class="form-control" placeholder="请输入你要搜索的内容" id="kw">
+                                    <span class="glyphicon glyphicon-search form-control-feedback magnifying_glass" ></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row "id="right_table">
+                        <div class="col-md-12">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <input type="checkbox">
+                                            全选
+                                        </th>
+                                        <th>编号</th>
+                                        <th>图片</th>
+                                        <th>作者</th>
+                                        <th>小说名</th>
+                                        <th>总字数</th>
+                                        <th>浏览数</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <div class="navbar-right fengye">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer ></footer>
+    </div>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/bootlint.js"></script>
+    <script src="../js/pre_products.js"></script>
+<script>
+
+</script>
+</body>
+</html>

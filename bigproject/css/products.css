@@ -1,0 +1,145 @@
+/*分页查询的页面，根据不同的类型查询不同的数据*/
+#container{
+  width:1130px;
+  margin:0 auto;
+  background: white;
+  position: relative;
+  top:-80px;
+
+}
+/*.nav{*/
+    /*border-bottom: 1px solid #333;*/
+    /*margin: 10px;*/
+/*}*/
+/*.nav ul li{*/
+    /*float:left;*/
+    /*font-size: 16px;*/
+    /*padding:10px 15px;*/
+    /*border-bottom:3px solid transparent;*/
+/*}*/
+/*.nav ul li:hover{*/
+    /*border-bottom:2px solid #FF7AAD;*/
+/*}*/
+
+/*对类别的那一排div 设置样式*/
+.fenlei{
+  width:100%;
+  font-size: 14px;
+}
+.fenlei span{
+  margin-left:40px;
+  margin-right:40px;
+  margin-bottom:20px;
+  margin-top:10px;
+  position:relative;
+  top:-25px;
+  
+}
+.fenlei ul{
+  display:inline-block;
+  margin-bottom:20px;
+  margin-top:10px;
+}
+.fenlei ul li{
+  width:50px;
+  height:18px;
+  margin-left:20px;
+  border:1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  float:left;
+  line-height:18px;
+  text-align:center;
+  cursor: pointer;
+}
+.fenlei ul li:hover{
+  background:#FA9198;
+  color:white;
+  border:1px solid #fa9198;
+
+}
+
+/*对小说的展示div设置样式*/
+.content{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.content .story{
+  width:31%;
+  height:180px;
+  margin-top:40px;
+  margin-left:10px;
+  margin-right:10px;
+  font-size:14px;
+}
+.story>div:first-child{
+  width:38%;
+  height:100%;
+  background:pink;
+}
+.story>div:last-child{
+  width:59%;
+  height:100%;
+  position: relative;
+}
+
+.story>div:last-child p:first-child{
+  font-size:18px;
+  line-height: 20px;
+  font-weight: bold;
+  font-size:16px;
+  margin-top:10px;
+  margin-bottom:30px;
+}
+.story>div:last-child p:nth-child(2){
+  margin-bottom:10px;
+}
+.story>div:last-child p:nth-child(4){
+  position:absolute;
+  bottom:30px;
+
+}
+.story>div:last-child p:last-child{
+  position:absolute;
+  bottom:5px;
+
+}
+/*设置页码导航的样式*/
+#page{
+    padding: 0px 20px;
+    text-align: right;
+    background: linear-gradient(to top , #f5f4f5,#f0f0ef);
+    height: 40px;
+    line-height: 40px;
+    width:1130px;
+    margin:10px auto;
+}
+#page a{
+  padding:4px 10px;
+  border:1px solid #ddd;
+  border-radius: 4px;
+  color:#FF7AAD;
+  font-size:14px;
+}
+#page a.current{
+  background:#FF7AAD;
+  color:white;
+  border-color:#FF7AAD;
+
+}
+#page a.disabled{
+    color: #bfbfbf;
+    background: #f2f2f2;
+    border: 1px solid #bfbfbf;
+}
+
+/*为被选中的li提供一个class样式*/
+.selector{
+  background:#FF7AAD;
+  background:#FA9198;
+  color:white;
+  border:1px solid #fa9198;
+
+}

@@ -1,0 +1,261 @@
+html,body{
+	width:100%;
+}
+.container{
+	width:100%;
+}
+*,*:before,*:after{
+	box-sizing:border-box;
+}
+.left_col{
+	margin-left:0px;
+	min-height:100%;
+	width:15%;
+	padding:0;
+	position:absolute;
+	background:#E77693;
+	z-index:1;
+
+}
+.nav>li>a{
+	font-size:22px;
+	font-weight:500;
+	padding:13px 15px 12px;
+	display:block;
+	color:#E7E7E7;
+	border-right:5px solid transparent;
+}
+.child_menu{
+	overflow: hidden;
+	height:0px;
+	transition: all .5s linear;
+}
+.child_menu>li{
+	padding-left:10px;
+}
+.child_menu>li>a{
+	border-left:1px solid #BDE7F7;
+	margin-left:30px;
+	padding:5px 0;
+}
+.child_menu>li>a:before{
+	content:"";
+	display:inline-block;
+	width:8px;
+	height:8px;
+	background:#BDE7F7;
+	border-radius: 50%;
+	margin-right:20px;
+	position: relative;
+	top:-4px;
+	left:-5px;
+}
+.nav_title{
+	width:100%;
+	height:100px;
+	background:white;
+}
+.nav_logo{
+	width:120px;
+	height:63px;
+	background:url("../img/logo.png") no-repeat -38px -60px;
+}
+.site_title{
+	font-size: 30px;
+}
+.profile{
+	margin-top:20px;
+}
+.profile_pic{
+	margin-left: 20px;
+	margin-top:20px;
+	float:left;
+	transform: scale(2);
+}
+.profile_info{
+	float:right;
+	margin-right: 20px;
+}
+.menu_section{
+	margin-top:40px;
+}
+.menu_section>h3{
+	margin-left:10px;
+	font-size:16px;
+}
+
+/*设置后台首页 部分的样式*/
+#sidebar-menu{
+	font-size:13px;
+	font-weight:500;
+}
+#sidebar-menu a{
+
+}
+
+.side-menu>li>a:hover{
+	border-right:5px solid #FA9198;
+	background:#E77693;
+}
+.nav>li>a>span{
+	margin-right:10px;
+}
+.nav>li>a>span:before{
+	/*display: block;*/
+	/*transform: scale(1);*/
+	position:relative;
+	top:2px;
+}
+.nav>li>a>span:nth-child(2):before{
+	display: block;
+	transform: scale(0.7);
+	margin-right:-5px;
+}
+/*//左侧导航栏底部四个图标*/
+.sidebar-footer{
+	position:fixed;
+	bottom:0px;
+	width:15%;
+	background:black;
+	height:45px;
+
+}
+.sidebar-footer>a{
+	margin:20px;
+}
+.sidebar-footer>a>span:before{
+	display:block;
+	transform: scale(2);
+	position:relative;
+	top:13px;
+}
+
+
+/*开始设置右边小说内容的样式*/
+.right_col{
+	width:85%;
+	/*background:red;*/
+	float:right;
+	color:#7387A7;
+}
+.right-header{
+	background:#EDEDED;
+	height:75px;
+	border-bottom: 1px solid #D9DEE4;
+}
+.right-header span:before{
+	display:block;
+	transform: scale(2);
+	position:relative;
+	left:61px;
+	top:28px;
+	opacity: 0.8;
+}
+.right-header span:hover{
+	opacity:1;
+}
+.right-header .uname{
+	font-size:20px;
+	line-height: 70px;
+	margin-right:50px;
+	margin-left:14px;
+}
+a:focus{
+	outline:0;
+}
+.badge{
+	position:relative;
+	left:68px;
+	top:2px;
+	background:#1ABB9C;
+}
+.msg_uname{
+	height:75px;
+	padding:10px 30px;
+}
+.uname_email{
+	top:-10px;
+	left:-77px;
+}
+.uname_btn{
+	border-color:#EDEDED;
+	background:none;
+}
+.uname_btn:hover{
+	background:#D9DEE4;
+	border-color:#D9DEE4;
+}
+.msg_uname:hover{
+	background:#D9DEE4;
+}
+.uname_down{
+	position:absolute;
+	left:258px;
+	top:14px;
+	transform: scale(0.5);
+}
+.uname_list{
+	position:absolute;
+	top:0px;
+	right:0px;
+	font-size:18px;
+	line-height: 20px;
+
+}
+
+#right_title h2{
+	padding-left:20px;
+	font-size:40px;
+	font-weight: bold;
+	opacity: 0.7;
+	line-height: 50px;
+	margin:20px 20px;
+	border-bottom:3px solid #E6E9ED;
+}
+#right_pnosize span{
+	padding-left:20px;
+	font-size:18px;
+	font-weight: 500;
+	opacity: 0.7;
+	line-height: 40px;
+}
+.sel{
+	width:60px;
+	height:30px;
+	font-size: 18px;
+}
+.right_search{
+	position:relative;
+	left:-20px;
+}
+.magnifying_glass{
+	 left:176px;
+ }
+.has-feedback label.sr-only ~ .form-control-feedback{
+	top:-2px;
+}
+/*设置全部商品表格的样式*/
+#right_table{
+	margin-top:20px;
+	font-size:16px;
+}
+#right_table th,td{
+	text-align:center;
+	vertical-align:middle !important;
+	position:relative;
+}
+.small_img{
+	width:30%;
+	height:30%;
+}
+.big_img{
+	width:83px;
+	height: 54px;
+	position:absolute;
+	left:109px;
+	top:8px;
+	transition: all .5s linear;
+}
+.fengye{
+	margin-right:10px;
+}
